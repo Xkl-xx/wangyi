@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  const app = document.getElementById("app")
+  app.style.cssText = "width:100px;height:100px;background:red;margin: 0 auto; transition: all ease 1s"
+  requestAnimationFrame(function F1() {
+    app.style.width = "200px";
+    app.style.height = "200px";
+    app.style.background = "blue";
+    app.style.borderRadius = '50%';
+    requestAnimationFrame(function F2() {
+      app.style.width = "50px";
+      app.style.height = "50px";
+      app.style.background = "yellow";
+    })
+  })
+</script>
+
+</html>
