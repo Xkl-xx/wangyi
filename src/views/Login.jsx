@@ -45,7 +45,7 @@ function Login() {
   }, []);
   return (
     <div className=" flex flex-col items-center">
-      <div className=" w-[100%] h-[72px] px-[20px] flex justify-between items-center">
+      <div className=" w-[100%] h-[72px] px-[20px] box-border flex justify-between items-center">
         <Link to="/">
           <span className="w-[27px] h-[27px] text-black">
             <Icon icon="icon-park-outline:left" className=" text-[22.5px]" />
@@ -95,7 +95,7 @@ function Login() {
       <img
         src="https://admirable-jalebi-ce44af.netlify.app/static/bg-login.png"
         alt=""
-        className=" fixed bottom-0 left-0"
+        className=" h-[200px] fixed bottom-0 left-0"
       />
     </div>
   );
